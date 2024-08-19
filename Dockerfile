@@ -10,8 +10,11 @@ COPY requirements.txt .
 # Install any dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Explicitly ensure uvicorn is installed
+RUN pip install uvicorn
+
 # Copy the entire app directory into the container
-COPY app/ .
+COPY app/ /app/
 
 # Expose the port that the app will run on
 EXPOSE 8000
