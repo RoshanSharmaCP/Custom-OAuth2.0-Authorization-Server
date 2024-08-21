@@ -8,6 +8,4 @@ class UserCreate(BaseModel):
     password: str
 
 class OAuthClientCreate(BaseModel):
-    client_id: str
-    client_secret: str
     redirect_uri: str
