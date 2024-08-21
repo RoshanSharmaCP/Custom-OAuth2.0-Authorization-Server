@@ -5,16 +5,16 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt .
+COPY requirements.txt /app/
 
 # Install any dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Explicitly ensure uvicorn is installed
-RUN pip install uvicorn
+RUN uvicorn --version
 
-# Copy the entire app directory into the container
-COPY app/ /app/
+# Copy all the application files into the container
+
+COPY . /app/
 
 # Expose the port that the app will run on
 EXPOSE 8000

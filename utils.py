@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
-from .schemas import TokenData
+from schemas import TokenData
 
 SECRET_KEY = "bdde70f57258477766a6f5dac70723c7f14eeff233985a3fd1f7577c1afee287"
 ALGORITHM = "HS256"
