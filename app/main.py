@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .database import SessionLocal, engine
+from app.database import SessionLocal, engine
 # from . import models, schemas, crud, auth
 from typing import List
 from app.database import get_db
