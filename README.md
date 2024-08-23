@@ -1,4 +1,4 @@
-# FastAPI OAuth2.0 Authorization Server
+# Custom OAuth2.0 Authorization Server
 <img width="561" alt="Screenshot 2024-08-23 at 8 19 34 PM" src="https://github.com/user-attachments/assets/e11f4c7f-5fd2-4a29-a5ca-104eae01fb41">
 
 
