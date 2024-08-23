@@ -3,7 +3,7 @@
 
 
 
-This project is a custom OAuth2.0 authorization server built using FastAPI, SQLAlchemy, and PostgreSQL. The server provides user registration, client registration, authorization code generation, access token issuance, and protected resource access.
+This project is a custom OAuth2.0 authorization server built using Python, FastAPI, SQLAlchemy, JWT. Then the app has been dockerized using Docker. The server provides user registration, client registration, authorization code generation, access token issuance, and protected resource access.
 
 ## Features
 
