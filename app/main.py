@@ -39,7 +39,6 @@ def authorize(user_id: int, client_secret: str, db: Session = Depends(get_db)):
 @app.post("/get_access_token")
 def get_access_token(request: TokenRequest, db: Session = Depends(get_db)):
     auth_code = get_authorization_code(db, request.authorization_code)
-    # breakpoint()
     if not auth_code or auth_code.client_secret != request.client_secret:
         raise HTTPException(status_code=400, detail="Invalid authorization code or client secret")
 
