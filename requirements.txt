@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+SQLAlchemy
+PyJWT
+psycopg2-binary  # for PostgreSQL or sqlite3 for SQLite
